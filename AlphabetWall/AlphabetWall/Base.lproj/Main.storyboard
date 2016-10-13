@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlphabetWall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strangerwall" translatesAutoresizingMaskIntoConstraints="NO" id="ptp-Gv-9Wn">
+                                <color key="backgroundColor" red="0.25259734947643975" green="0.014518889167381182" blue="0.0095134998535550859" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1284" id="R1o-Mq-30I"/>
+                                    <constraint firstAttribute="width" constant="1925" id="tDM-3F-k8g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stranger Things's Alphabet Wall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRk-Rr-AJf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2xT-cM-HI6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text (514) 612-4045 to see your message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2v-il-CEn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BHw-A9-qHS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WRk-Rr-AJf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6AW-gp-KbY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ptp-Gv-9Wn" secondAttribute="bottom" constant="-130" id="6ET-aW-wk3"/>
+                            <constraint firstItem="ptp-Gv-9Wn" firstAttribute="centerX" secondItem="d2v-il-CEn" secondAttribute="centerX" id="A2m-Nm-QJg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d2v-il-CEn" secondAttribute="bottom" constant="25" id="Cml-fw-xkR"/>
+                            <constraint firstItem="d2v-il-CEn" firstAttribute="top" secondItem="WRk-Rr-AJf" secondAttribute="bottom" constant="8" id="MhF-HM-cL6"/>
+                            <constraint firstItem="WRk-Rr-AJf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WN1-K8-8Dx"/>
+                            <constraint firstItem="d2v-il-CEn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="opm-9c-CN8"/>
+                            <constraint firstItem="d2v-il-CEn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ueb-hc-c0c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alphabetImage" destination="ptp-Gv-9Wn" id="huI-3k-dZ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="-61"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="strangerwall" width="816" height="544"/>
+    </resources>
+</document>
