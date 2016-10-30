@@ -13,7 +13,7 @@ class CommunicationManager {
     // Retrieve signals from Twitter/Sms and call the LightsManager
 
     
-    private var url = URL(string:"http://yourserver.com/alphabet-wall-list.php") <#todo#>// Change the var to your server!
+    private var url = URL(string:"http://yourserver.com/sms.json") <#todo#>// Change the var to your server!
     private var resetUrl = URL(string:"http://yourserver.com/reset.php") <#todo#>// Change the var to your server!
     private var messages:[Message] = []
     private var remoteList:[Message] = [] // If we directly modify the list we risk race conditions
